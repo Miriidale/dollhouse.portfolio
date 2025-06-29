@@ -36,12 +36,33 @@
 <body>
   <div class="container">
     <h1>Welcome to My Portfolio</h1>
+
+    <!-- Dollhouse image with clickable map -->
     <img
       src="dollhouse.jpg"
       alt="Cartoon Dollhouse"
+      usemap="#dollhousemap"
       class="dollhouse"
     />
+
+    <!-- Image Map Hotspots -->
+    <map name="dollhousemap">
+      <!-- Coordinates will depend on your actual image dimensions -->
+      <area shape="rect" coords="150,120,300,250" href="#about" alt="About Me" />
+      <area shape="rect" coords="320,120,470,250" href="#projects" alt="Projects" />
+      <area shape="rect" coords="500,260,650,380" href="#skills" alt="Skills" />
+      <area shape="rect" coords="200,380,370,500" href="#contact" alt="Contact" />
+      <area shape="rect" coords="400,510,600,650" href="#home" alt="Home" />
+    </map>
+
     <p>Click on a room to explore different parts of my portfolio like About Me, Projects, Skills, and Contact.</p>
   </div>
+
+  <!-- Placeholder sections -->
+  <div id="about"><h2>About Me</h2><p>Info about who I am...</p></div>
+  <div id="projects"><h2>Projects</h2><p>Details about my work...</p></div>
+  <div id="skills"><h2>Skills</h2><p>Stuff I’m good at...</p></div>
+  <div id="contact"><h2>Contact</h2><p>How to reach me...</p></div>
+  <div id="home"><h2>Welcome Home!</h2><p>You’re already here :)</p></div>
 </body>
 </html>
